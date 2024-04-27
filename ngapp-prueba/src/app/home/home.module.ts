@@ -6,6 +6,8 @@ import { MainComponent } from './sections/main/main.component';
 import { HomeComponent } from './home.component';
 import { AppHomeRoutingModule } from './app-home-routing.module';
 import { ToolbarModule } from 'primeng/toolbar';
+import { CardModule } from 'primeng/card';
+import { CardPokeComponent } from './components/card-poke/card-poke.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,8 @@ import { ToolbarModule } from 'primeng/toolbar';
     HeaderComponent,
     MainComponent,
     FooterComponent,
+    CardPokeComponent,
   ],
-  imports: [CommonModule, AppHomeRoutingModule, ToolbarModule],
+  imports: [CommonModule, AppHomeRoutingModule, ToolbarModule, CardModule],
 })
 export class HomeModule {}
